@@ -1,0 +1,41 @@
+"Games"
+{
+	"csgo"
+	{
+		"Addresses"
+		{
+			"GetModuleHandleW"
+			{
+				"windows"
+                {
+                    "signature" "initialize_pointers"        
+                }
+				"read" "8"
+			}
+			
+			"PEHeaderAddr"
+			{
+				"windows"
+                {
+                    "signature" "PEHeader"        
+                }
+				"offset" "0"
+			}
+		}
+		
+		"Signatures"
+		{
+			"initialize_pointers"
+			{
+				"library"		"server"
+				"windows"		"\x56\x68\x2A\x2A\x2A\x2A\xFF\x15\x2A\x2A\x2A\x2A\x8B\xF0"
+			}
+			
+			"PEHeader"
+			{
+				"library"		"server"
+				"windows"		"\x4D\x5A\x90\x00"
+			}
+		}
+	}
+}
