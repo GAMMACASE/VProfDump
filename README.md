@@ -1,3 +1,5 @@
+## CURRENTLY HAS A BUG THAT CAN LEAD TO WRONG CODE LOGIC FOR PLUGINS THAT ARE CALLING SETFAILSTATE() OR THROWERROR()
+
 # VProfDump
 Allows to dump ``sm prof dump vprof`` output to a file.
 
